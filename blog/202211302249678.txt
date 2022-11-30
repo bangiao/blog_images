@@ -1,0 +1,13 @@
+| `hasRole(String role)` 当前用户是否具备指定角色
+| `hasAnyRole(String...roles)` 当前用户是否具备指定角色中的任意一个
+| `hasAuthority(String authority)` 当前用户是否具备指定的权限
+| `hasAnyAuthority(String...authorities)` 当前用户是否具备指定权限中的任意一个
+| `principal` 代表当前登录主体 `Principal`
+| `authentication` 这个是从`SecurityContext`中获取到的 `Authentication`对象
+| `permitAll` 允许所有的请求/调用
+| `denyAll` 拒绝所有的请求/调用
+| `isAnonymous` 当前用户是否是一个匿名用户
+| `isRememberMe` 当前用户是否是通过`RememberMe`自动登录
+| `isAuthenticated` 当前用户是否已经认证成功
+| `isFullyAuthenticated` 当前用户是否既不是匿名用户又不是通过`RememberMe`自动登录的
+| `hasPermission(Object target, Object permission)` 当前用户是否具备指定目标的指定权限
